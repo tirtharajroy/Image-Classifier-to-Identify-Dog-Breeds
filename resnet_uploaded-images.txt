@@ -1,0 +1,77 @@
+uploaded_images/ resnet dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   Koala_01.jpg  label:                      koala
+ 2 key:                     Mug_01.jpg  label:                        mug
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                  Koala_01.jpg: 
+Real:                      koala   Classifier: koala, koala bear, kangaroo bear, native bear, phascolarctos cinereus
+
+                    Mug_01.jpg: 
+Real:                        mug   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                  Koala_01.jpg: 
+Real:                      koala   Classifier: koala, koala bear, kangaroo bear, native bear, phascolarctos cinereus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Mug_01.jpg: 
+Real:                        mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match: 50.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+** Total Elapsed Runtime: 0:0:0
